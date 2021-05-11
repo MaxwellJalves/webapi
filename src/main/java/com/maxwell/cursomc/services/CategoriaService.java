@@ -15,8 +15,8 @@ public class CategoriaService {
 	private CategoriaRepository categoria;
 
 	public Categoria find(Integer id) {
-		Optional<com.maxwell.cursomc.domain.Categoria> cat = categoria.findById(id);
-		return (Categoria) cat.orElse(null);
+		Optional<Categoria> cat = categoria.findById(id);
+		return  cat.orElse(null);
 	}
 
 
