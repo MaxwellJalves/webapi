@@ -1,33 +1,28 @@
 package com.maxwell.cursomc.resources;
 
+import java.util.Optional;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.maxwell.cursomc.domain.Categoria;
+import com.maxwell.cursomc.services.CategoriaService;
 
 @RestController
-@RequestMapping(value="/categorias")
+@RequestMapping(value = "/categorias")
 public class CategoriaResource {
 
-	@RequestMapping(method=RequestMethod.GET)
-	public List<Categoria> findAll() {
-		
-		Categoria cat1 = new Categoria();
-		cat1.setId(1000);
-		cat1.setNome("ELETRODOMESTICOS");
+	@Autowired
+	private CategoriaService services;
 
-		Categoria cat2 = new Categoria();
-		cat2.setId(1002);
-		cat2.setNome("INFORMATICA");
+	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
+	public ResponseEntity<?> find(@PathVariable Integer id) {
 
-		List<Categoria> categoria = new ArrayList<>();
-		categoria.add(cat1);
-		categoria.add(cat2);
-		return categoria;
+		Categoria obj = services.find(id);
+		return ResponseEntity.ok().body(obj);
 	}
 }
