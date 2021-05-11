@@ -9,5 +9,5 @@ import com.maxwell.cursomc.domain.Categoria;
 public interface CategoriaRepository extends JpaRepository<Categoria, Integer>  {
 
 	
-
+	
 }
