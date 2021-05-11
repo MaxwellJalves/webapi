@@ -25,4 +25,9 @@ public class CategoriaResource {
 		Categoria obj = services.find(id);
 		return ResponseEntity.ok().body(obj);
 	}
+	
+	@RequestMapping(method=RequestMethod.GET)
+	public ResponseEntity<?> findAll(){
+		return ResponseEntity.ok().body(services.findAll());
+	}
 }
