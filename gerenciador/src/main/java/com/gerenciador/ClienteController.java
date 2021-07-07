@@ -7,17 +7,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin("*")
 @RestController
 @RequestMapping("clientes")
 public class ClienteController {
 
     @Autowired
     private ClienteService serv;
+
     @GetMapping
     public List<Cliente> listarTodos(){
-        Cliente cli = new Cliente(null,"Maxwell", TipoAtendimento.PRESENCIAL);
-        serv.salvar(cli);
         return serv.findAll() ;
     }
 
