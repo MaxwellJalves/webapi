@@ -1,30 +1,18 @@
-import { Component } from 'react';
-import api from './api';
+import React, { Component } from 'react';
+import FormComponent from './components/FormComponent';
+import { ConsumerSpringApi } from './components/ConsumerSpring';
 
-class App extends Component{
+export default class App extends Component {
 
-  state ={
-    clientes :[],
-
-  }
-
-  async componentDidMount(){
-    const response = await api.get('');
-    console.log(response)
-    this.setState({clientes:response.data})
-    
-  }
-  render(){
+  render() {
 
     return (
       <div>
-        
-        <h1>CONSULTA</h1>
-
-
+        <FormComponent />
+        <ConsumerSpringApi />
       </div>
     );
   }
 }
 
-export default App;
+
