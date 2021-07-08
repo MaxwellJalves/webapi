@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FormComponent from './components/FormComponent';
+import ListMap from './components/ListMap';
 import { ConsumerSpringApi } from './components/ConsumerSpring';
 
 export default class App extends Component {
@@ -10,6 +11,7 @@ export default class App extends Component {
       <div>
         <FormComponent />
         <ConsumerSpringApi />
+        <ListMap/>
       </div>
     );
   }
