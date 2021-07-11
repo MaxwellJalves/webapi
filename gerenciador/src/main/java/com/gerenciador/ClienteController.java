@@ -20,6 +20,7 @@ public class ClienteController {
         return serv.findAll() ;
     }
 
+    
     @PostMapping
     public Cliente adicionar(@RequestBody Cliente cli){
         return serv.salvar(cli);

@@ -1,0 +1,16 @@
+li{
+    color: rgb(249, 247, 252);
+    font-family:  Courier, monospace;
+}
+
+.card-box{
+    display: flexbox;
+    
+    width: 220px;
+    height: 70%;
+    background-color: darkcyan;
+    padding: 10px;
+    border: snow 1px solid;
+}
+
+
