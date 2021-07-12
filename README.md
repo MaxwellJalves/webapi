@@ -1,4 +1,4 @@
-# Projeto Criado utilizando o Spring boot e React  
+# Projeto Criado utilizando  Spring boot e React  
 - Objetivo Validar conceitos de comunicação  entre o back e o front utilizando API
 - Realizar testes com Loombok e MapStruct
 - Realizar teste de Regreção
