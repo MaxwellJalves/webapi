@@ -11,6 +11,7 @@
 
 - [ ] https://www.devmedia.com.br/teste-de-regressao/23038 (Pendente)
 - [x] https://mapstruct.org/documentation/stable/reference/html/ (documentaçao - Em andamento)
+- [ ] https://www.oracle.com/java/technologies/javase/javabeans-getlisteners.html (Especificação Java Beans)
 
 # Referencias sobre o ciclo de Vida do Maven
 
