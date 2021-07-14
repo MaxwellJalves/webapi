@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import api from '../api';
+import api from '../../api';
+import './Estilo.css';
 
 export class ConsumerSpringApi extends Component {
     state = {
@@ -17,13 +18,15 @@ export class ConsumerSpringApi extends Component {
 
         const { clientes } = this.state;
         return (
-            <div>
+            <div >
                 <h1>Lista Api Spring</h1>
                 {clientes.map(cli => (
                     <ul key={cli.id}>
-                        <li>{cli.id}</li>
-                        <li>{cli.nome}</li>
-                        <li>{cli.tipo}</li>
+                        <div className="card-box">
+                            <li>{cli.id}</li>
+                            <li>{cli.nome}</li>
+                            <li>{cli.tipo}</li>
+                        </div>
                     </ul>
 
                 ))}

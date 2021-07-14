@@ -1,0 +1,12 @@
+.conteudo{
+    display: flex;
+}
+
+
+:root{
+    --primary:#48b8c9;
+    --second:#373f51;
+    --second-active:#cccccc;
+    --background: #ffffff;
+    --background-details:#ececec;
+}
