@@ -10,6 +10,7 @@
 
 
 - [ ] https://www.devmedia.com.br/teste-de-regressao/23038 (Pendente)
+- [x] https://mapstruct.org/documentation/stable/reference/html/ (documentaçao - Em andamento)
 
 # Referencias sobre o ciclo de Vida do Maven
 
